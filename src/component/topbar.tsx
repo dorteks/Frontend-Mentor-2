@@ -1,12 +1,4 @@
-import {
-  Box,
-  Divider,
-  Heading,
-  HStack,
-  Img,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Box, HStack, Img, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 
 const Topbar = () => {
@@ -22,7 +14,7 @@ const Topbar = () => {
           <Text fontSize="35px" fontWeight="bold" width="180px">
             sneakers
           </Text>
-          <HStack gap={20} fontSize="18px">
+          <HStack gap={30} fontSize="18px">
             <Text>Collections</Text>
             <Text>Men</Text>
             <Text>Women</Text>
