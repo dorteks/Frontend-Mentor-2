@@ -5,7 +5,7 @@ import React from "react";
 
 const Homecontainer = () => {
   return (
-    <Box pl="250px" pr="250px">
+    <Box pl="350px" pr="350px">
       <Topbar />
       <Divider
         orientation="horizontal"
