@@ -54,8 +54,8 @@ const Body = () => {
           </Text>
           <Text pt="2rem" color="gray" lineHeight="1.5rem">
             These low-profile sneakers arer your perfect casual wear companion.
-            Featuring a double rubber outer sole, they'll withstand everything
-            the weather can offer.
+            Featuring a double rubber outer sole, they&apos;ll withstand
+            everything the weather can offer.
           </Text>
           <HStack pt="1rem">
             <Text fontSize="2rem" fontWeight="bold">
