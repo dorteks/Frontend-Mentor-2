@@ -1,71 +1,94 @@
 import {
   Box,
-  Button,
-  Grid,
-  GridItem,
-  HStack,
   Img,
-  Stack,
+  Grid,
   Text,
+  Stack,
+  Button,
+  HStack,
+  GridItem,
 } from "@chakra-ui/react";
 import React from "react";
 
 const Body = () => {
   return (
     <Grid
-      templateColumns="repeat(2, 1fr)"
-      pl={["11rem", "11rem", "11rem", "0rem", "11rem"]}
-      pr={["11rem", "11rem", "11rem", "0rem", "11rem"]}
       pt="5rem"
       maxWidth="100vw"
       maxHeight="100vh"
+      templateColumns="repeat(2, 1fr)"
+      pl={["11rem", "11rem", "1rem", "3rem", "11rem"]}
+      pr={["11rem", "11rem", "1rem", "3rem", "11rem"]}
     >
-      <GridItem minWidth="auto" height="auto">
+      <GridItem
+        height="auto"
+        minWidth="auto"
+        placeContent="center"
+        display={["none", "none", "flex", "flex", "flex"]}
+      >
         <Stack align="center">
           <Img
             borderRadius="20px"
-            boxSize={["28rem", "28rem", "28rem", "24rem", "28rem"]}
             src="/images/image-product-1.jpg"
+            boxSize={["28rem", "28rem", "20rem", "24rem", "28rem"]}
           />
           <HStack pt="40px">
             <Img
               borderRadius="15px"
-              boxSize={["0rem", "0rem", "0rem", "5.6rem", "6.3rem"]}
               src="/images/image-product-1-thumbnail.jpg"
+              boxSize={["0rem", "0rem", "4.6rem", "5.6rem", "6.3rem"]}
             />
             <Img
               borderRadius="15px"
-              boxSize={["0rem", "0rem", "0rem", "5.6rem", "6.3rem"]}
               src="/images/image-product-2-thumbnail.jpg"
+              boxSize={["0rem", "0rem", "4.6rem", "5.6rem", "6.3rem"]}
             />
             <Img
               borderRadius="15px"
-              boxSize={["0rem", "0rem", "0rem", "5.6rem", "6.3rem"]}
               src="/images/image-product-3-thumbnail.jpg"
+              boxSize={["0rem", "0rem", "4.6rem", "5.6rem", "6.3rem"]}
             />
             <Img
               borderRadius="15px"
-              boxSize={["0rem", "0rem", "0rem", "5.6rem", "6.3rem"]}
               src="/images/image-product-4-thumbnail.jpg"
+              boxSize={["0rem", "0rem", "4.6rem", "5.6rem", "6.3rem"]}
             />
           </HStack>
         </Stack>
       </GridItem>
-      <GridItem width="100%" height="auto">
-        <Stack mt="4rem" ml="2rem" width="500px">
+      <GridItem
+        width="100%"
+        height="auto"
+        display={["none", "none", "flex", "flex", "flex"]}
+      >
+        <Stack
+          pl={["3rem", "3rem", "1rem", "3rem", "3rem"]}
+          mt={["4rem", "4rem", "2.5rem", "3rem", "4rem"]}
+          width={["500px", "500px", "50vw", "500px", "500px"]}
+        >
           <Text letterSpacing={1} fontWeight="bold" color="orange">
             SNEAKER COMPANY
           </Text>
-          <Text pt="0.5rem" fontWeight="bold" fontSize="3rem">
+          <Text
+            fontWeight="bold"
+            fontSize={["3rem", "3rem", "2.3rem", "2.7rem", "3rem"]}
+          >
             Fall Limited Edition Sneakers
           </Text>
-          <Text pt="2rem" color="gray" lineHeight="1.5rem">
+          <Text
+            color="gray"
+            pt={["0rem", "0rem", "0.5rem", "1rem", "2rem"]}
+            lineHeight={["0rem", "0rem", "1.3rem", "1.5rem", "1.5rem"]}
+          >
             These low-profile sneakers arer your perfect casual wear companion.
             Featuring a double rubber outer sole, they&apos;ll withstand
             everything the weather can offer.
           </Text>
-          <HStack pt="1rem">
-            <Text fontSize="2rem" fontWeight="bold">
+          <HStack pt={["0rem", "0rem", "0rem", "0rem", "1rem"]}>
+            <Text
+              fontSize={["0rem", "0rem", "1.7rem", "2rem", "2rem"]}
+              fontWeight="bold"
+            >
               $125.00
             </Text>
             <Box backgroundColor="orange" p="3px">
@@ -74,32 +97,35 @@ const Body = () => {
               </Text>
             </Box>
           </HStack>
-          <Text as="s" pt="0.5rem" fontWeight="bold">
+          <Text
+            as="s"
+            pt={["0rem", "0rem", "0rem", "0.5rem", "0.5rem"]}
+            fontWeight="bold"
+          >
             $250.00
           </Text>
-          <HStack pt="2rem">
+          <HStack pt={["0rem", "0rem", "1rem", "1.5rem", "2rem"]}>
             <Button
-              width="180px"
-              backgroundColor="gray.50"
               borderColor="white"
-              height="60px"
               borderRadius="15px"
+              gap={[0, 0, 7, 10, 10]}
+              backgroundColor="gray.50"
+              height={["60px", "60px", "50px", "60px", "60px"]}
+              width={["180px", "180px", "180px", "180px", "180px"]}
             >
               <Img src="/images/icon-minus.svg" />
-              <Text fontSize="1rem" pl="3rem" pr="3rem">
-                0
-              </Text>
+              <Text fontSize="1rem">0</Text>
               <Img src="/images/icon-plus.svg" />
             </Button>
             <Button
-              width="300px"
-              height="60px"
               gap={5}
-              borderColor="white"
-              borderRadius="15px"
               fontSize="1rem"
               fontWeight="bold"
+              borderColor="white"
+              borderRadius="15px"
               backgroundColor="orange"
+              height={["60px", "60px", "50px", "60px", "60px"]}
+              width={["300px", "300px", "300px", "300px", "300px"]}
             >
               <Img src="/images/icon-cart.svg" />
               Add to Cart
