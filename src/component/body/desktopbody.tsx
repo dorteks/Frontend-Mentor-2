@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 
-const Body = () => {
+const DesktopBody = () => {
   return (
     <Grid
       pt="5rem"
@@ -137,4 +137,4 @@ const Body = () => {
   );
 };
 
-export default Body;
+export default DesktopBody;
