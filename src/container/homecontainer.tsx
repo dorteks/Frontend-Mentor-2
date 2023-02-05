@@ -1,20 +1,14 @@
 import Body from "@/component/body";
 import Topbar from "@/component/topbar";
-import { Box, Divider } from "@chakra-ui/react";
+import { Box, Divider, Stack } from "@chakra-ui/react";
 import React from "react";
 
 const Homecontainer = () => {
   return (
-    <Box pl="350px" pr="350px">
+    <Stack display="grid" placeContent="center">
       <Topbar />
-      <Divider
-        orientation="horizontal"
-        color="black"
-        borderRadius="1px"
-        mb="100px"
-      />
       <Body />
-    </Box>
+    </Stack>
   );
 };
 
