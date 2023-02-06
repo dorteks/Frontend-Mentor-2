@@ -8,9 +8,11 @@ import {
   HStack,
   GridItem,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 
 const DesktopBody = () => {
+  const [count, setCount] = useState(0);
+
   return (
     <Grid
       pt="5rem"
@@ -105,18 +107,37 @@ const DesktopBody = () => {
             $250.00
           </Text>
           <HStack pt={["0rem", "0rem", "1rem", "1.5rem", "2rem"]}>
-            <Button
+            <Stack
+              direction="row"
               borderColor="white"
+              align="center"
+              justify="space-between"
               borderRadius="15px"
-              gap={[0, 0, 7, 10, 10]}
+              gap={[0, 0, 7, 9, 9]}
               backgroundColor="gray.50"
               height={["60px", "60px", "50px", "60px", "60px"]}
               width={["180px", "180px", "180px", "180px", "180px"]}
             >
-              <Img src="/images/icon-minus.svg" />
-              <Text fontSize="1rem">0</Text>
-              <Img src="/images/icon-plus.svg" />
-            </Button>
+              <Button
+                backgroundColor="gray.50"
+                isDisabled={count === 0}
+                onClick={() => setCount(count - 1)}
+              >
+                <Img src="/images/icon-minus.svg" />
+              </Button>
+              <Text fontSize="1rem" width="50px" textAlign="center">
+                {count}
+              </Text>
+              <Button
+                backgroundColor="gray.50"
+                onClick={() => setCount(count + 1)}
+              >
+                <Img
+                  src="/images/icon-plus.svg"
+                  onClick={() => setCount(count + 1)}
+                />
+              </Button>
+            </Stack>
             <Button
               gap={5}
               fontSize="1rem"

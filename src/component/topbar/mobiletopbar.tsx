@@ -5,10 +5,10 @@ const MobileTopbar = () => {
   const [display, toggleDisplay] = useState("none");
 
   return (
-    <Box bgColor={["purple", "yellow", "red", "yellow", "blue"]}>
+    <Box bgColor={["white", "yellow", "red", "yellow", "blue"]}>
       <Stack
         align="center"
-        height="100px"
+        height="80px"
         direction="row"
         justify="space-between"
         pl={["20px", "30px", "0px", "0px", "0px"]}
