@@ -19,9 +19,9 @@ const DesktopBody = () => {
       maxWidth="100vw"
       maxHeight="100vh"
       templateColumns="repeat(2, 1fr)"
-      mb={["0rem", "0rem", "10rem", "10rem", "20rem"]}
-      pl={["11rem", "11rem", "1rem", "3rem", "11rem"]}
-      pr={["11rem", "11rem", "1rem", "3rem", "11rem"]}
+      mb={["0px", "0px", "150px", "150px", "150px"]}
+      pl={["0px", "0px", "15px", "50px", "150px"]}
+      pr={["0px", "0px", "15px", "50px", "150px"]}
     >
       <GridItem
         height="auto"

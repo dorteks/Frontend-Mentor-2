@@ -4,11 +4,9 @@ import React from "react";
 const DesktopTopbar = () => {
   return (
     <Box
-      minHeight="10vh"
-      minWidth="100vw"
       alignSelf="center"
-      pl={["11rem", "11rem", "1rem", "3rem", "10rem"]}
-      pr={["11rem", "11rem", "1rem", "3rem", "10rem"]}
+      pl={["0px", "0px", "20px", "50px", "150px"]}
+      pr={["0px", "0px", "20px", "50px", "150px"]}
       display={["none", "none", "block", "block", "block"]}
       bgColor={["purple", "green", "red", "yellow", "blue"]}
     >
