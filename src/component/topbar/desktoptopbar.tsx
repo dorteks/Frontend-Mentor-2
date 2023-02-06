@@ -1,10 +1,9 @@
 import { Box, HStack, Img, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 
-const Topbar = () => {
+const DesktopTopbar = () => {
   return (
     <Box
-      // display="block"
       minHeight="10vh"
       minWidth="100vw"
       alignSelf="center"
@@ -14,9 +13,9 @@ const Topbar = () => {
       bgColor={["purple", "green", "red", "yellow", "blue"]}
     >
       <Stack
-        direction="row"
         align="center"
         height="100px"
+        direction="row"
         justify="space-between"
       >
         <Stack direction="row">
@@ -46,4 +45,4 @@ const Topbar = () => {
   );
 };
 
-export default Topbar;
+export default DesktopTopbar;
