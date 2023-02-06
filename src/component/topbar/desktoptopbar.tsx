@@ -13,9 +13,10 @@ const DesktopTopbar = () => {
       bgColor={["purple", "green", "red", "yellow", "blue"]}
     >
       <Stack
-        align="center"
+        display="flex"
         height="100px"
         direction="row"
+        alignItems="center"
         justify="space-between"
       >
         <Stack direction="row">

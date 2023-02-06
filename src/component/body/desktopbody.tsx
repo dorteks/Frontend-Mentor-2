@@ -19,6 +19,7 @@ const DesktopBody = () => {
       maxWidth="100vw"
       maxHeight="100vh"
       templateColumns="repeat(2, 1fr)"
+      mb={["0rem", "0rem", "10rem", "10rem", "20rem"]}
       pl={["11rem", "11rem", "1rem", "3rem", "11rem"]}
       pr={["11rem", "11rem", "1rem", "3rem", "11rem"]}
     >

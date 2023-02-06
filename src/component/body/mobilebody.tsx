@@ -6,7 +6,11 @@ const MobileBody = () => {
 
   return (
     <Stack display={["flex", "flex", "none", "none", "none"]}>
-      <Stack direction="row">
+      <Stack
+        direction="row"
+        pl={["0px", "15%", "0px", "0px", "0px"]}
+        pr={["0px", "15%", "0px", "0px", "0px"]}
+      >
         <Img
           id="slider-img"
           width="full"
@@ -21,11 +25,11 @@ const MobileBody = () => {
           position="absolute"
           alignItems="center"
           justifyItems="center"
-          justify="space-between"
+          // justify="space-between"
         >
           <Box
             boxSize="40px"
-            bgColor="blue"
+            bgColor="white"
             display="grid"
             borderRadius="25px"
             placeContent="center"
@@ -39,7 +43,7 @@ const MobileBody = () => {
           </Box>
           <Box
             boxSize="40px"
-            bgColor="blue"
+            bgColor="white"
             display="grid"
             borderRadius="25px"
             placeContent="center"
@@ -54,7 +58,11 @@ const MobileBody = () => {
         </Stack>
       </Stack>
 
-      <Stack pl="20px" pr="20px" pt="20px">
+      <Stack
+        pl={["20px", "20%", "0px", "0px", "0px"]}
+        pr={["20px", "20%", "0px", "0px", "0px"]}
+        pt="20px"
+      >
         <Text letterSpacing={1} fontWeight="bold" color="orange">
           SNEAKER COMPANY
         </Text>
@@ -101,14 +109,14 @@ const MobileBody = () => {
 
         <Stack pt="40px" gap={3}>
           <Stack
+            width="full"
+            height="60px"
+            align="center"
             direction="row"
             borderColor="white"
-            align="center"
-            justify="space-between"
             borderRadius="15px"
+            justify="space-between"
             backgroundColor="gray.50"
-            height="60px"
-            width="full"
           >
             <Button
               backgroundColor="gray.50"

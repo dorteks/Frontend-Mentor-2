@@ -11,14 +11,14 @@ const MobileTopbar = () => {
         height="80px"
         direction="row"
         justify="space-between"
-        pl={["20px", "30px", "0px", "0px", "0px"]}
-        pr={["20px", "30px", "0px", "0px", "0px"]}
+        pl={["20px", "15%", "0px", "0px", "0px"]}
+        pr={["20px", "15%", "0px", "0px", "0px"]}
         display={["flex", "flex", "none", "none", "none"]}
       >
         <Stack
           align="center"
           direction="row"
-          gap={["15px", "50px", "0px", "0px", "0px"]}
+          gap={["15px", "20px", "0px", "0px", "0px"]}
         >
           <Img
             alt="open menu button  "
