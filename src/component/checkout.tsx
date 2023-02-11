@@ -9,7 +9,13 @@ const Checkout = () => {
 
   return (
     <div>
-      <Button onClick={toggleModal} bgColor="inherit">
+      <Button
+        onClick={toggleModal}
+        bgColor="inherit"
+        _hover={{
+          background: "inherit",
+        }}
+      >
         <Img src="/images/icon-cart.svg" alt="cart icon" />
         <Text ml="5px" pb="10px">
           {0}
