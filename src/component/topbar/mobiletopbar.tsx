@@ -1,14 +1,4 @@
-import {
-  Badge,
-  Box,
-  Button,
-  Card,
-  Divider,
-  HStack,
-  Img,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Box, HStack, Img, Stack, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
 import Checkout from "../checkout";
 
@@ -16,7 +6,9 @@ const MobileTopbar = () => {
   const [display, toggleDisplay] = useState("none");
 
   return (
-    <Box bgColor={["white", "yellow", "red", "yellow", "blue"]}>
+    <Box
+    // bgColor={["white", "yellow", "red", "yellow", "blue"]}
+    >
       <Stack
         align="center"
         height="80px"
