@@ -4,6 +4,8 @@ import React, { useState } from "react";
 const AddToCart = () => {
   const [count, setCount] = useState(0);
 
+  const [] = useState();
+
   return (
     <Stack
       direction={["column", "column", "row", "row", "row"]}
@@ -49,6 +51,7 @@ const AddToCart = () => {
         borderColor="white"
         borderRadius="15px"
         backgroundColor="orange"
+        onClick={() => console.log("a")}
         height={["60px", "60px", "50px", "60px", "60px"]}
         width={["auto", "auto", "300px", "300px", "300px"]}
       >
