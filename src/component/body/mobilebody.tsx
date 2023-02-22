@@ -1,8 +1,10 @@
 import { Box, HStack, Img, Stack, Text } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import AddToCart from "../cartFunction/addToCart";
 
 const MobileBody = () => {
+  const [image, setImage] = useState("/images/image-product-1.jpg");
+
   return (
     <Stack display={["flex", "flex", "none", "none", "none"]}>
       <Stack
@@ -10,12 +12,7 @@ const MobileBody = () => {
         pl={["0px", "15%", "0px", "0px", "0px"]}
         pr={["0px", "15%", "0px", "0px", "0px"]}
       >
-        <Img
-          id="slider-img"
-          width="full"
-          src="/images/image-product-1.jpg"
-          boxSize="auto"
-        />
+        <Img id="slider-img" width="full" src={image} boxSize="auto" />
         <Stack
           pr="15px"
           width="full"
@@ -34,7 +31,7 @@ const MobileBody = () => {
             placeContent="center"
           >
             <Img
-              onClick={() => console.log("prev button")}
+              onClick={() => setImage("/images/image-product-4.jpg")}
               boxSize="15px"
               alt="previous botton"
               src="/images/icon-previous.svg"
@@ -48,7 +45,7 @@ const MobileBody = () => {
             placeContent="center"
           >
             <Img
-              onClick={() => console.log("next button")}
+              onClick={() => setImage("/images/image-product-2.jpg")}
               boxSize="15px"
               alt="next botton"
               src="/images/icon-next.svg"

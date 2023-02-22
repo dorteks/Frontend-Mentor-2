@@ -13,10 +13,17 @@ import React, { useState } from "react";
 import AddToCart from "../cartFunction/addToCart";
 
 const DesktopBody = () => {
+  const [image, setImage] = useState("/images/image-product-1.jpg");
   const [opacity, setOpacity] = useState("1");
 
-  const handleChangeOpacity = () => {
-    setOpacity("0.5");
+  const toggleOpacity = () => {
+    if (opacity === "0.5") {
+      setOpacity("1");
+    } else {
+      if (opacity === "1") {
+        setOpacity("0.5");
+      }
+    }
   };
 
   return (
@@ -39,34 +46,38 @@ const DesktopBody = () => {
           <Stack align="center">
             <Img
               borderRadius="20px"
-              src="/images/image-product-1.jpg"
+              src={image}
               boxSize={["28rem", "28rem", "20rem", "24rem", "28rem"]}
             />
             <HStack pt="40px">
               <Img
-                opacity={opacity}
-                onClick={handleChangeOpacity}
+                onClick={() => {
+                  setImage("/images/image-product-1.jpg");
+                }}
                 borderRadius="15px"
                 src="/images/image-product-1-thumbnail.jpg"
                 boxSize={["0rem", "0rem", "4.6rem", "5.6rem", "6.3rem"]}
               />
               <Img
-                opacity={undefined}
-                onClick={handleChangeOpacity}
+                onClick={() => {
+                  setImage("/images/image-product-2.jpg");
+                }}
                 borderRadius="15px"
                 src="/images/image-product-2-thumbnail.jpg"
                 boxSize={["0rem", "0rem", "4.6rem", "5.6rem", "6.3rem"]}
               />
               <Img
-                opacity={undefined}
-                onClick={handleChangeOpacity}
+                onClick={() => {
+                  setImage("/images/image-product-3.jpg");
+                }}
                 borderRadius="15px"
                 src="/images/image-product-3-thumbnail.jpg"
                 boxSize={["0rem", "0rem", "4.6rem", "5.6rem", "6.3rem"]}
               />
               <Img
-                opacity={undefined}
-                onClick={handleChangeOpacity}
+                onClick={() => {
+                  setImage("/images/image-product-4.jpg");
+                }}
                 borderRadius="15px"
                 src="/images/image-product-4-thumbnail.jpg"
                 boxSize={["0rem", "0rem", "4.6rem", "5.6rem", "6.3rem"]}
