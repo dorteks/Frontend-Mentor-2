@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Sneakers Type 1",
+    "price": 125.0,
+    "imgUrl": "/imgages/image-product-1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Sneakers Type 2",
+    "price": 105.0,
+    "imgUrl": "/imgages/image-product-2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Sneakers Type 3",
+    "price": 155.0,
+    "imgUrl": "/imgages/image-product-3.jpg"
+  },
+
+  {
+    "id": 4,
+    "name": "Sneakers Type 4",
+    "price": 115.0,
+    "imgUrl": "/imgages/image-product-4.jpg"
+  }
+]

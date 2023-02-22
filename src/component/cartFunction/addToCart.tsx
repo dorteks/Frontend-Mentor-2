@@ -1,23 +1,23 @@
+import React from "react";
+import { useBetween } from "use-between";
+import { useSharableState } from "./useSharableState";
 import { Stack, Button, Img, Text } from "@chakra-ui/react";
-import React, { useState } from "react";
 
 const AddToCart = () => {
-  const [count, setCount] = useState(0);
-
-  const [] = useState();
+  const { count, setCount, setCart } = useBetween(useSharableState);
 
   return (
     <Stack
-      direction={["column", "column", "row", "row", "row"]}
-      pt={["2rem", "1.5rem", "1rem", "1.5rem", "2rem"]}
       gap={["5", "5", "0", "0", "0"]}
+      pt={["2rem", "1.5rem", "1rem", "1.5rem", "2rem"]}
+      direction={["column", "column", "row", "row", "row"]}
     >
       <Stack
+        align="center"
         direction="row"
         borderColor="white"
-        align="center"
-        justify="space-between"
         borderRadius="15px"
+        justify="space-between"
         gap={[0, 0, 7, 9, 9]}
         backgroundColor="gray.50"
         height={["60px", "60px", "50px", "60px", "60px"]}
@@ -33,31 +33,24 @@ const AddToCart = () => {
         <Text fontSize="1rem" width="50px" textAlign="center">
           {count}
         </Text>
-        <Button
-          backgroundColor="gray.50"
-          disabled={count < 2}
-          onClick={() => setCount(count + 1)}
-        >
-          <Img
-            src="/images/icon-plus.svg"
-            onClick={() => setCount(count + 1)}
-          />
+        <Button backgroundColor="gray.50" onClick={() => setCount(count + 1)}>
+          <Img src="/images/icon-plus.svg" />
         </Button>
       </Stack>
       <Button
         gap={5}
         fontSize="1rem"
         fontWeight="bold"
+        onClick={setCart}
         borderColor="white"
         borderRadius="15px"
         backgroundColor="orange"
-        onClick={() => console.log("a")}
         height={["60px", "60px", "50px", "60px", "60px"]}
         width={["auto", "auto", "300px", "300px", "300px"]}
       >
         <Img src="/images/icon-cart.svg" />
         Add to Cart
-      </Button>{" "}
+      </Button>
     </Stack>
   );
 };
