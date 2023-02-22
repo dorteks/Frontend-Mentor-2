@@ -10,7 +10,7 @@ import {
   ButtonGroup,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
-import AddToCart from "../addToCart";
+import AddToCart from "../cartFunction/addToCart";
 
 const DesktopBody = () => {
   const [opacity, setOpacity] = useState("1");

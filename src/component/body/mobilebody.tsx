@@ -1,6 +1,6 @@
 import { Box, HStack, Img, Stack, Text } from "@chakra-ui/react";
 import React from "react";
-import AddToCart from "../addToCart";
+import AddToCart from "../cartFunction/addToCart";
 
 const MobileBody = () => {
   return (

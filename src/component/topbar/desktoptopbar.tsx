@@ -1,6 +1,6 @@
 import { Box, HStack, Img, Stack, Text } from "@chakra-ui/react";
 import React from "react";
-import Checkout from "../checkout";
+import Checkout from "../cartFunction/checkout";
 
 const DesktopTopbar = () => {
   return (
